@@ -71,3 +71,7 @@
   font-weight: 500;
 }
 
+#new , #new2{
+  font-size: 1.8rem;
+  opacity: 75%;
+}

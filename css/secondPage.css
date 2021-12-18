@@ -116,3 +116,8 @@ a:link, a:visited,  a:hover, a:active
   font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
 }
+
+#new , #new2{
+  font-size: 1.8rem;
+  opacity: 75%;
+}
