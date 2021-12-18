@@ -1,75 +1,86 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
-.mainbody{
+.mainbody {
     margin: 0;
     display: grid;
     height: max-content;
 }
 
-.navbar{
+.navbar {
     height: 15vh;
     display: grid;
     grid-template-columns: 85% 15%;
     align-items: center;
-    
 }
 
-    .name{    
-        grid-column: 1/3;
-        grid-row: 1;
-        text-align: center;
-    }
+.name {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+}
 
-    .logo{
-        text-decoration: none;
-        font-size: 5vh;
-    }
+.logo {
+    text-decoration: none;
+    font-size: 5vh;
+}
 
-    .login{
-        grid-column: 2/3;
-        grid-row: 1;
-    }
+.login {
+    grid-column: 2/3;
+    grid-row: 1;
+}
 
-.content{
+.login>a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+}
+
+.content {
     margin: auto;
     grid-row: 2;
     display: grid;
     padding-top: 3rem;
 }
 
-    .t1{
-        font-size: 5vh;
-        font-weight: 500;
-        text-align: center;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
+.t1 {
+    font-size: 5vh;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
-    .t2{
-        padding-top: 2.5rem;
-        font-size: 3vh;
-        text-align: center;
-    }
+.t2 {
+    padding-top: 2.5rem;
+    font-size: 3vh;
+    text-align: center;
+}
 
-    .buttons{
-        display: grid;
-        justify-content: center;
-        padding: 1rem;
-        padding-top: 2.5rem;
-    }
+.buttons {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 2.5rem;
+}
 
-    .b1, .b2{
-        background-color: #cda0ff; 
-        border: none;
-        padding: 15px 32px;
-        border-radius: 2rem;
-        text-align: center;
-        margin: .8rem;
-    }
+.b1,
+.b2 {
+    background-color: #b779ff;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 2rem;
+    text-align: center;
+    margin: .8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    button a {     
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
+button a {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-weight:lighter;
+    font-size: 1rem;
+}

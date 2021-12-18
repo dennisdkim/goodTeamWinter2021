@@ -5,7 +5,10 @@
 .mainbody{
     margin: 0;
     display: grid;
-    height: max-content;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: max-content max-content;
 }
 
 .navbar{
@@ -46,4 +49,37 @@
         justify-content: left;
         align-items: center;
         text-decoration: none;
+    }
+
+.copybox {
+    display: grid;
+    margin: auto;
+    justify-items: center;
+    grid-template-rows: max-content auto;
+}
+
+    #myInput{
+        margin-top: 1rem;
+        display: flex;
+        border: none;
+        height: 40vh;
+        width: 40vh;
+        align-self: baseline;
+        padding: 2rem;
+        padding-top: 3rem;
+        border-radius: 1rem;
+        background-color: rgba(137, 43, 226, 0.267);
+    }
+
+    .copybutton{
+        margin-top: .3rem;
+    }
+
+    .copybutton > button {
+        background-color: rgba(69, 146, 108, 0.877);
+        color: white;
+        width: 49vh;
+        border: none;
+        height: 2rem;
+        border-radius: 1rem;
     }
