@@ -1,0 +1,61 @@
+.gradient-custom {
+    background-color: white;
+}
+
+p {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+}
+
+.labelText {
+    color: black;
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    font-size: 1.2vw;
+}
+
+#subtitle {
+    font-size: 2vw;
+}
+
+h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    color: #551aa0;
+}
+
+button {
+    background-color: #cda0ff;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: none;
+    border-radius: 10px;
+}
+
+form {
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#typeEmailX {
+    border: none;
+    background-color: white;
+    color: white;
+}
+
+#typePasswordX {
+    border: none;
+    background-color: white;
+    color: white;
+}
