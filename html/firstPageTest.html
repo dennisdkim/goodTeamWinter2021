@@ -6,22 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="../css/firstPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
 </head>
 
-
-
 <body>
-    <button onclick="personalSelected()">
-        <a href="secondPageTest.html?personal"> Personal
-        </a>
-    </button>
-    <button onclick="businessSelected()">
-        <a href="secondPageTest.html?business"> Business
-        </a>
-    </button>
+    <div class="mainbody">
+        <div class="navbar">
+            <div class="name"><a class="logo" href="">nomo</a> </div>
+            <div class="login"><a href="">  <span class="material-icons-round">
+                person
+            </span></a>
+              
+
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text t1">
+                effective replies for any situation, making declining stress-free
+            </div>
+            <div class="text t2">
+                what type of response do you need today?
+            </div>
+            <div class="buttons">
+                <button class="b1" onclick="personalSelected()">
+                    <a href="secondPageTest.html?personal"> Personal
+                    </a>
+                </button>
+                <button class="b2" onclick="businessSelected()">
+                    <a href="secondPageTest.html?business"> Business
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
-<script src="/js/firstPage.js"></script>
+<script src="../js/firstPage.js"></script>
 
 </html>
