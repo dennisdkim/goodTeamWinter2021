@@ -11,16 +11,18 @@ function queryDecector() {
 
         document.getElementById("fifthButton").innerText = "Workload addition";
 
+        document.getElementById("CategoryHeading").innerText = "BUSINESS";
         console.log("business works");
 
         changeHREF("business");
- 
+
     } else if (urlParams.has('personal')) {
         document.getElementById("firstButton").innerText = "Hangout";
         document.getElementById("secondButton").innerText = "Date";
         document.getElementById("thirdButton").innerText = "Babysit";
         document.getElementById("fourthButton").innerText = "Family Dinners";
         document.getElementById("fifthButton").innerText = "Help Request";
+        document.getElementById("CategoryHeading").innerText = "PERSONAL";
         console.log("personal works");
 
         changeHREF("personal");
@@ -28,7 +30,7 @@ function queryDecector() {
         console.log("Error has occured");
     }
 
-    
+
 }
 
 queryDecector();
@@ -40,7 +42,7 @@ function changeHREF(param) {
         document.getElementById("third").setAttribute("href", "thirdPageTest.html?CoffeeChat");
         document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?TakingShifts");
         document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?WorkloadAddition");
-    } else if (param == "personal"){
+    } else if (param == "personal") {
         document.getElementById("first").setAttribute("href", "thirdPageTest.html?Hangout");
         document.getElementById("second").setAttribute("href", "thirdPageTest.html?Date");
         document.getElementById("third").setAttribute("href", "thirdPageTest.html?Babysit");
