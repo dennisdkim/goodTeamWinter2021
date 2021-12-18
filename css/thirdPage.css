@@ -6,7 +6,7 @@
   .container {
     height: 100vh;
     display: grid;
-    grid-template-rows: max-content max-content max-content;
+    grid-template-rows: max-content max-content;
   }
   
   .navbar {
@@ -49,4 +49,11 @@
     text-decoration: none;
   }
 
-  
+.generatedbuttons{
+    margin-top: 10rem;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+}
+
