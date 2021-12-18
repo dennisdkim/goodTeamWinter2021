@@ -22,7 +22,7 @@ function loadButtons(){
       document.getElementById("newButtons").appendChild(newQuoteButton);
       var btnChild = document.getElementById("newButtons").children;
       for (var i2 = 0; i2 < btnChild.length; i2++){
-        btnChild[i2].style.display = "block";
+        btnChild[i2].style.display = "inline-block";
         btnChild[i2].setAttribute("id", i2);
       }
     }
