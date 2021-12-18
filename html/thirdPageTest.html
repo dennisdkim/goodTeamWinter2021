@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/thirdPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
+    <!-- Firebase 8 CDNs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/thirdPage.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
-  <!-- Firebase 8 CDNs-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-  </script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <!-- Link to the api keys for your firebase project -->
+    <script src="../js/firebaseAPI.js"></script>
+  </head>
 
-
-  <!-- Link to the api keys for your firebase project -->
-  <script src="../js/firebaseAPI.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="navbar">
-      <div class="one" onclick="history.back(-1)">
-        <span class="material-icons-round">
-          arrow_back_ios
-        </span>
-      </div>
-      <div class="name"><a class="logo" href="./firstPageTest.html">nomo</a> </div>
-      <div class="login"><a href=""> <span class="material-icons-round">
-            person
-          </span></a>
-      </div>
-    </div>
-    
-    <div class="generatedbuttons">
-      <div id="quoteButton" style="display:none">
-        <a href="ChatInput.html"><button id="reply">Sample choice</button></a>
-      </div>
-      <div id="newButtons">
-
+  <body>
+    <div class="container" id="bodyDiv">
+      <div class="navbar">
+        <div class="one" onclick="history.back(-1)">
+          <span class="material-icons-round"> arrow_back_ios </span>
+        </div>
+        <div class="name">
+          <a class="logo" href="./firstPageTest.html">nomo</a>
+        </div>
+        <div class="login">
+          <a href=""> <span class="material-icons-round"> person </span></a>
+        </div>
+        <div id="quoteButton" style="display: none" onclick="storeQuote(this)">
+          <a href="#"><button id="reply">Sample choice</button></a>
+        </div>
+        <div id="newButtons"></div>
       </div>
     </div>
-
     <script src="../js/thirdPage.js"></script>
     <script>
       window.onload = (event) => {
@@ -55,7 +52,5 @@
         loadButtons();
       };
     </script>
-  </div>
-</body>
-
+  </body>
 </html>
