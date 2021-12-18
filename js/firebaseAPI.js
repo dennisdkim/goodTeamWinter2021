@@ -1,4 +1,3 @@
-//copied from demo 8
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -14,4 +13,4 @@ var firebaseConfig = {
 //initialize database in firebaseAPI script
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
-// const storage = firebase.storage();
+  

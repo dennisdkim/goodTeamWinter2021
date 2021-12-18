@@ -5,17 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel="stylesheet" href="../css/secondPage.css">
+    <title>Category</title>
 </head>
 
 <body>
-    <a id="first"><button id="firstButton"></button></a>
-    <a id="second"><button id="secondButton"></button></a>
-    <a id="third"><button id="thirdButton"></button></a>
-    <a id="fourth"><button id="fourthButton"></button></a>
-    <a id="fifth"><button id="fifthButton"></button></a>
-    
-    <script src="/js/secondPage.js"></script>
+    <div class="container">
+        <div class="navbar">
+            <div class="one" onclick="history.back(-1)">
+                <span class="material-icons-round">
+                    arrow_back_ios
+                </span>
+            </div>
+            <div class="name"><a class="logo" href="./firstPageTest.html">nomo</a> </div>
+            <div class="login"><a href=""> <span class="material-icons-round">
+                        person
+                    </span></a>
+            </div>
+        </div>
+        <div id="headingDiv">
+            <br>
+            <h2 id="CategoryHeading">CATEGORY</h2>
+            <br><br>
+        </div>
+        <div id="categories">
+            <a class="button b1" id="first">
+                <span class="material-icons-round" id="firstIcon"></span>
+                <span id="firstButton"></span>
+            </a>
+            <a class="button b2" id="second">
+                <span class="material-icons-round" id="secondIcon"></span>
+                <span id="secondButton"></span>
+            </a>
+            <a class="button b3" id="third">
+                <span class="material-icons-round" id="thirdIcon"></span>
+                <span id="thirdButton"></span>
+            </a>
+            <a class="button b4" id="fourth">
+                <span class="material-icons-round" id="fourthIcon"></span>
+                <span id="fourthButton"></span>
+            </a>
+            <a class="button b5" id="fifth">
+                <span class="material-icons-round" id="fifthIcon"></span>
+                <span id="fifthButton"></span>
+            </a>
+            <a class="button b6" id="sixth">
+                <span class="material-icons-round" id="sixthIcon"></span>
+                <span id="sixthButton"></span>
+            </a>
+        </div>
+
+    </div>
+    <script src="../js/secondPage.js"></script>
 </body>
 
 

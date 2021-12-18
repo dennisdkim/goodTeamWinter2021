@@ -6,22 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/copypage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
 </head>
 
 <body>
-    <!-- The text field -->
-    <input type="text" value="Hello World" id="myInput">
+    <div class="mainbody">
+        <div class="navbar">
+            <div class="one" onclick="history.back(-1)">
+                <span class="material-icons-round">
+                    arrow_back_ios
+                </span>
+            </div>
+            <div class="name"><a class="logo" href="./firstPageTest.html">nomo</a> </div>
+            <div class="login"><a href=""> <span class="material-icons-round">
+                        person
+                    </span></a>
+            </div>
+        </div>
+        <div class="copybox">
+            <div class="input-box">
+                <!-- The text field -->
+                <textarea id="myInput">hello Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit sapiente vitae unde cum repellendus ab reprehenderit officia nulla, exercitationem, odio dolores qui modi commodi enim sequi culpa quia aspernatur quaerat neque error ullam delectus voluptates mollitia maxime? Quam inventore reiciendis expedita, molestiae explicabo facere quos voluptates non quis quia ut.
+                    </textarea>
 
-    <!-- The button used to copy the text -->
-    <button onclick="myFunction()">Copy text</button>
+            </div>
 
+            <div class="copybutton">
+                <!-- The button used to copy the text -->
+                <button onclick="myFunction()">copy to clipboard</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
 
 
 <script>
-
     //copy and paste function 
     function myFunction() {
         /* Get the text field */
@@ -35,6 +57,7 @@
         navigator.clipboard.writeText(copyText.value);
 
         /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
+        alert("Copied to clipboard!");
+        //  + copyText.value
     }
 </script>
