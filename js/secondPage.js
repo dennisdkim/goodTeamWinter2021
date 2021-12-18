@@ -1,26 +1,26 @@
 function queryDecector() {
     var urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('business')) {
-        document.getElementById("firstButton").innerText = "Event";
+        document.getElementById("firstButton").innerText = "Coffee Chat";
 
-        document.getElementById("secondButton").innerText = "Meeting";
+        document.getElementById("secondButton").innerText = "Job Offer";
 
-        document.getElementById("thirdButton").innerText = "Coffee Chat";
+        document.getElementById("thirdButton").innerText = "Shift";
 
-        document.getElementById("fourthButton").innerText = "Taking Shifts";
+        document.getElementById("fourthButton").innerText = "Sick";
 
-        document.getElementById("fifthButton").innerText = "Workload addition";
+        document.getElementById("fifthButton").innerText = "Work Event";
 
         console.log("business works");
 
         changeHREF("business");
  
     } else if (urlParams.has('personal')) {
-        document.getElementById("firstButton").innerText = "Hangout";
+        document.getElementById("firstButton").innerText = "Babysit";
         document.getElementById("secondButton").innerText = "Date";
-        document.getElementById("thirdButton").innerText = "Babysit";
-        document.getElementById("fourthButton").innerText = "Family Dinners";
-        document.getElementById("fifthButton").innerText = "Help Request";
+        document.getElementById("thirdButton").innerText = "Family Hangout";
+        document.getElementById("fourthButton").innerText = "Self Invitation";
+        document.getElementById("fifthButton").innerText = "Hangout";
         console.log("personal works");
 
         changeHREF("personal");
