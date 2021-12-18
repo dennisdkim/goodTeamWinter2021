@@ -25,6 +25,9 @@ function queryDecector() {
 
         changeHREF("business");
 
+        localStorage.setItem("type", "Business");
+        // console.log(localStorage.getItem("type"));
+
     } else if (urlParams.has('personal')) {
         document.getElementById("firstButton").innerText = "Babysit";
         document.getElementById("firstIcon").innerText = "child_friendly";
@@ -48,6 +51,9 @@ function queryDecector() {
         // console.log("personal works");
 
         changeHREF("personal");
+
+        localStorage.setItem("type", "Personal");
+        // console.log(localStorage.getItem("type"));
     } else {
         console.log("Error has occured");
     }
@@ -59,16 +65,16 @@ queryDecector();
 
 function changeHREF(param) {
     if (param == "business") {
-        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Event");
-        document.getElementById("second").setAttribute("href", "thirdPageTest.html?Meeting");
-        document.getElementById("third").setAttribute("href", "thirdPageTest.html?CoffeeChat");
-        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?TakingShifts");
-        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?WorkloadAddition");
+        document.getElementById("first").setAttribute("href", "thirdPageTest.html?CoffeeChat");
+        document.getElementById("second").setAttribute("href", "thirdPageTest.html?JobOffer");
+        document.getElementById("third").setAttribute("href", "thirdPageTest.html?Shift");
+        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?Sick");
+        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?WorkEvent");
     } else if (param == "personal") {
-        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Hangout");
+        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Babysit");
         document.getElementById("second").setAttribute("href", "thirdPageTest.html?Date");
         document.getElementById("third").setAttribute("href", "thirdPageTest.html?Family");
-        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?SelfInvitation");
-        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?Hangout");
+        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?Hangout");
+        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?SelfInvitation");
     }
 }
