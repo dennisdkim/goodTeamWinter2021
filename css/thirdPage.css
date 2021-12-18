@@ -1,0 +1,28 @@
+.mainbody{
+    margin: 0;
+    display: grid;
+    height: max-content;
+}
+
+.navbar{
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+}
+
+    .name{    
+        grid-column: 1/3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .logo{
+        text-decoration: none;
+        font-size: 5vh;
+    }
+
+    .login{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
