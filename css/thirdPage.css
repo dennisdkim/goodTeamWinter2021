@@ -74,7 +74,7 @@
   text-align: center;
   margin: .8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease-in-out;
 }
 
@@ -93,4 +93,11 @@
 #new , #new2{
   font-size: 1.8rem;
   opacity: 75%;
+}
+
+#headingDiv{
+  margin-left: 12%;
+  font-size: 28px;
+  opacity: 50%;
+  font-family: 'EB Garamond', serif;
 }
