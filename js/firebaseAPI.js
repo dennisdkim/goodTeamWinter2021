@@ -1,4 +1,3 @@
-//copied from demo 8
 
 // Your web app's Firebase configuration
 var  firebaseConfig = {
@@ -13,4 +12,5 @@ apiKey: "AIzaSyDttK3W9EaSI8QLKAez_f-4g9AXPHC-WhI",
   
 //initializes your firebase project in your local repo
 const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
   
