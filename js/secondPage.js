@@ -38,7 +38,7 @@ function queryDecector() {
         document.getElementById("thirdButton").innerText = "Family";
         document.getElementById("thirdIcon").innerText = "family_restroom";
 
-        document.getElementById("fourthButton").innerText = "Self Invitation";
+        document.getElementById("fourthButton").innerText = "Self Invite";
         document.getElementById("fourthIcon").innerText = "mail";
 
         document.getElementById("fifthButton").innerText = "Hangout";
