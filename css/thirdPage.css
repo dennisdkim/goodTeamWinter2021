@@ -18,6 +18,7 @@
   
   .one {
     grid-column: 1;
+    cursor: pointer;
   }
   
   .one>span {

@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -17,7 +18,8 @@
 }
 
 .one {
-  grid-column: 1;
+  grid-column: 1; 
+  cursor: pointer;
 }
 
 .one>span {
@@ -88,4 +90,10 @@
 
 .material-icons-round{
   margin-right: .5rem;
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
 }
