@@ -59,11 +59,30 @@
 }
 
 .generatedbuttons {
-  margin-top: 10rem;
-  width: 80%;
   height: auto;
-  margin: auto;
+  margin: 10%;
+  margin-top: 1rem;
   justify-content: center;
+}
+
+#reply{
+  font-size: 1.1rem;
+  background-color: #cca0ffad;
+  border: none;
+  padding: 20px 38px;
+  border-radius: 2rem;
+  text-align: center;
+  margin: .8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+#reply:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0);
+  box-shadow: 2px 2px 10px 1.5px rgba(0, 0, 0, 0.2);
+  background-color: #cca0ffd7;
 }
 
 * {
