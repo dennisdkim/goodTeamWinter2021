@@ -1,5 +1,6 @@
 function queryDecector() {
     var urlParams = new URLSearchParams(window.location.search);
+    console.log(urlParams);
     if (urlParams.has('business')) {
         document.getElementById("firstButton").innerText = "Coffee Chat";
 
@@ -18,7 +19,7 @@ function queryDecector() {
     } else if (urlParams.has('personal')) {
         document.getElementById("firstButton").innerText = "Babysit";
         document.getElementById("secondButton").innerText = "Date";
-        document.getElementById("thirdButton").innerText = "Family Hangout";
+        document.getElementById("thirdButton").innerText = "Family";
         document.getElementById("fourthButton").innerText = "Self Invitation";
         document.getElementById("fifthButton").innerText = "Hangout";
         console.log("personal works");
@@ -35,16 +36,16 @@ queryDecector();
 
 function changeHREF(param) {
     if (param == "business") {
-        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Event");
-        document.getElementById("second").setAttribute("href", "thirdPageTest.html?Meeting");
-        document.getElementById("third").setAttribute("href", "thirdPageTest.html?CoffeeChat");
-        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?TakingShifts");
-        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?WorkloadAddition");
+        document.getElementById("first").setAttribute("href", "thirdPageTest.html?CoffeeChat");
+        document.getElementById("second").setAttribute("href", "thirdPageTest.html?JobOffer");
+        document.getElementById("third").setAttribute("href", "thirdPageTest.html?Shift");
+        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?Sick");
+        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?WorkEvent");
     } else if (param == "personal"){
-        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Hangout");
+        document.getElementById("first").setAttribute("href", "thirdPageTest.html?Babysit");
         document.getElementById("second").setAttribute("href", "thirdPageTest.html?Date");
-        document.getElementById("third").setAttribute("href", "thirdPageTest.html?Babysit");
-        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?FamilyDinners");
-        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?HelpRequest");
+        document.getElementById("third").setAttribute("href", "thirdPageTest.html?Family");
+        document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?SelfInvitation");
+        document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?Hangout");
     }
 }
