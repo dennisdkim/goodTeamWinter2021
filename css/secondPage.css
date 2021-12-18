@@ -43,7 +43,7 @@
 
 .logo {
   text-decoration: none;
-  font-size: 5vh;
+  font-size: 3rem;
 }
 
 .login {
@@ -80,7 +80,7 @@
 #categories>a {
   text-decoration: none;
   display: flex;
-  background-color: #cca0ff9d;
+  background-color: #cca0ffad;
   width: 42vw;
   height: 21vh;
   border-radius: 1.5rem;
@@ -91,6 +91,15 @@
   margin-bottom: 2rem;
   color:white;
   font-weight: 500;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+#categories>a:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: #cca0ffdc;
+  transform: scale(1.03, 1.03);
 }
 
 .b1, .b3, .b5 {
@@ -101,11 +110,14 @@
   margin-right: 1.5vw;
 }
 
+<<<<<<< HEAD
 .material-icons-round{
   margin-right: .5rem;
   font-size: 1.25em;
 }
 
+=======
+>>>>>>> 3c19d077be36546661fea33e5d89b9cccbc9b1d3
 a:link, a:visited,  a:hover, a:active
 {
     color: #000000;
@@ -115,4 +127,9 @@ a:link, a:visited,  a:hover, a:active
 *{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
+}
+
+#new , #new2{
+  font-size: 1.8rem;
+  opacity: 75%;
 }
