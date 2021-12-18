@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.mainbody{
+    margin: 0;
+    display: grid;
+    height: max-content;
+}
+
+.navbar{
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    align-items: center;
+    
+}
+    .one{
+        grid-column: 1;
+    }
+
+    .one > span {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-decoration: none;
+        color: #551a8b;
+    }
+
+    .name{    
+        text-align: center;
+    }
+
+    .logo{
+        text-decoration: none;
+        font-size: 5vh;
+    }
+
+    .login{
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .login > a {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+    }

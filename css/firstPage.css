@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: 85% 15%;
     align-items: center;
+    
 }
 
     .name{    
@@ -62,14 +63,13 @@
     .b1, .b2{
         background-color: #cda0ff; 
         border: none;
-        color: white;
         padding: 15px 32px;
         border-radius: 2rem;
-
         text-align: center;
         margin: .8rem;
     }
 
     button a {     
+        color: rgb(0, 0, 0);
         text-decoration: none;
     }
