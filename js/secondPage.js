@@ -17,8 +17,8 @@ function queryDecector() {
         document.getElementById("fifthButton").innerText = "Work Event";
         document.getElementById("fifthIcon").innerText = "event";
 
-        document.getElementById("sixthButton").innerText = "Work Event";
-        document.getElementById("sixthIcon").innerText = "event";
+        document.getElementById("sixthButton").innerText = "Commute";
+        document.getElementById("sixthIcon").innerText = "drive_eta";
 
         document.getElementById("CategoryHeading").innerText = "Business";
         // console.log("business works");
@@ -44,8 +44,8 @@ function queryDecector() {
         document.getElementById("fifthButton").innerText = "Self Invite";
         document.getElementById("fifthIcon").innerText = "mail";
 
-        document.getElementById("sixthButton").innerText = "Work Event";
-        document.getElementById("sixthIcon").innerText = "favorite";
+        document.getElementById("sixthButton").innerText = "Commute";
+        document.getElementById("sixthIcon").innerText = "drive_eta";
 
         document.getElementById("CategoryHeading").innerText = "Personal";
         // console.log("personal works");
@@ -86,7 +86,7 @@ function showDropdown() {
         document.getElementById("profileDropDown").style.display = "block";
         document.getElementById("new").style.opacity = "1";
         counter++;
-        
+
     } else {
         document.getElementById("profileDropDown").style.display = "none";
         counter++;
