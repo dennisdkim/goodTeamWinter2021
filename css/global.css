@@ -22,7 +22,7 @@
 
 #dropDownViewProfile:hover,
 #dropDownLogout:hover {
-    background-color: lightgray;
+    opacity: 0.75;
 }
 
 #profileDropDown {

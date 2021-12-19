@@ -56,8 +56,36 @@ function findFilter() {
   dbResponses.get().then((doc) => {
     var quotesToCheck = doc.data().Responses;
     console.log(quotesToCheck);
+    if (filterOptions[0].checked == true) {
+      document.getElementById("newFilterButtons").innerHTML = "";
+      quotesToCheck.forEach((item) => {
+        if (item.includes("#stern") == true) {
+          document.getElementById("newButtons").style.display = "none";
+          console.log(item);
+          var arrIndex = quotesToCheck.indexOf(item);
+          var quoteButton = document.getElementById("quoteButton");
+          var reply = document.getElementById("reply");
+          var splitHash = item.split("#");
+          reply.innerHTML = splitHash[0];
+          var newQuoteButton = quoteButton.cloneNode(true);
 
-    if (filterOptions[0].checked == true) {} else if (filterOptions[1].checked == true) {
+          document
+            .getElementById("newFilterButtons")
+            .appendChild(newQuoteButton);
+
+          document.getElementById("newFilterButtons").style.display =
+            "inline-block";
+          var newFilterBtnChild =
+            document.getElementById("newFilterButtons").children;
+          for (var i4 = 0; i4 < newFilterBtnChild.length; i4++) {
+            newFilterBtnChild[i4].style.display = "inline-block";
+            newFilterBtnChild[i4].setAttribute("id", i4);
+          }
+        } else {
+        }
+      });
+    } else if (filterOptions[1].checked == true) {
+      document.getElementById("newFilterButtons").innerHTML = "";
       quotesToCheck.forEach((item) => {
         if (item.includes("#neutral") == true) {
           document.getElementById("newButtons").style.display = "none";
@@ -73,19 +101,56 @@ function findFilter() {
             .getElementById("newFilterButtons")
             .appendChild(newQuoteButton);
 
-          document.getElementById("newFilterButtons").style.display = "inline-block";
-          var newFilterBtnChild = document.getElementById("newFilterButtons").children;
-          console.log(newFilterBtnChild);
+          document.getElementById("newFilterButtons").style.display =
+            "inline-block";
+          var newFilterBtnChild =
+            document.getElementById("newFilterButtons").children;
           for (var i4 = 0; i4 < newFilterBtnChild.length; i4++) {
             newFilterBtnChild[i4].style.display = "inline-block";
             newFilterBtnChild[i4].setAttribute("id", i4);
           }
-
-
-        } else {}
+        } else {
+        }
       });
-    } else if (filterOptions[2].checked == true) {}
+    } else if (filterOptions[2].checked == true) {
+      document.getElementById("newFilterButtons").innerHTML = "";
+      quotesToCheck.forEach((item) => {
+        if (item.includes("#nice") == true) {
+          document.getElementById("newButtons").style.display = "none";
+          console.log(item);
+          var arrIndex = quotesToCheck.indexOf(item);
+          var quoteButton = document.getElementById("quoteButton");
+          var reply = document.getElementById("reply");
+          var splitHash = item.split("#");
+          reply.innerHTML = splitHash[0];
+          var newQuoteButton = quoteButton.cloneNode(true);
+
+          document
+            .getElementById("newFilterButtons")
+            .appendChild(newQuoteButton);
+
+          document.getElementById("newFilterButtons").style.display =
+            "inline-block";
+          var newFilterBtnChild =
+            document.getElementById("newFilterButtons").children;
+          for (var i4 = 0; i4 < newFilterBtnChild.length; i4++) {
+            newFilterBtnChild[i4].style.display = "inline-block";
+            newFilterBtnChild[i4].setAttribute("id", i4);
+          }
+        } else {
+        }
+      });
+    }
   });
+}
+
+function clearFilters(){
+  var filterBtns = document.getElementsByName("filterBtns");
+  for (var i = 0; i < filterBtns.length; i++){
+    filterBtns[i].checked = false;
+    document.getElementById("newFilterButtons").style.display = "none";
+    document.getElementById("newButtons").style.display = "inline-block";
+  }
 }
 
 function queryDetector() {
