@@ -5,8 +5,8 @@ function fillText(){
   var quotePosition = localStorage.getItem("quotePosition");
   var dbCollection = db.collection(eventType).doc(event);
   dbCollection.get().then((doc) => {
-    var quoteToInsert = doc.data().Responses[quotePosition];
-    console.log(quoteToInsert);
+    var quoteToInsertArr = doc.data().Responses[quotePosition].split("#");
+    var quoteToInsert = quoteToInsertArr[0];
     inputArea.innerHTML = quoteToInsert;
   });
 }
