@@ -5,14 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="/css/thirdPage.css" />
+  <title>Choices</title>
+  <link rel="stylesheet" href="../css/thirdPage.css" />
+  
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+
+  <!--font awesome icons-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <!-- Firebase 8 CDNs-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -33,12 +38,14 @@
         <a class="logo" href="./firstPageTest.html">nomo</a>
       </div>
       <div class="login">
-        <a href="profile.html"> <span class="material-icons-round"> person </span></a>
+        <a href=""> <span class="material-icons-round"> person </span></a>
       </div>
     </div>
     <div id="headingDiv">
       <br>
-      <span id="CategoryHeading">CATEGORY</span><span> INSERT greater than </span>
+      <!-- &gt; -->
+      <span id="CategoryHeading">CATEGORY</span>
+      <span class="material-icons-round"> keyboard_double_arrow_right </span>
       <span id="SubCategoryHeading">SUBCATEGORY</span>
     </div>
     <input type="checkbox" id="filterButton" onclick="toggleFilter()"><span class="material-icons-round">
@@ -62,7 +69,21 @@
       <div id="newButtons"></div>
       <div id="newFilterButtons"></div>
     </div>
+
+    <div id="extraspace"></div>
   </div>
+
+  <footer>
+    <div>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <a href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ" target="blank"><i style="font-size: 0.8em"
+          class="fa fa-users"></i></a>
+    </div>
+
+    <p class="copyright"> nomo © 2021</p>
+  </footer>
+
   <script src="../js/thirdPage.js"></script>
   <script>
     window.onload = (event) => {

@@ -57,8 +57,7 @@ function findFilter() {
     var quotesToCheck = doc.data().Responses;
     console.log(quotesToCheck);
 
-    if (filterOptions[0].checked == true) {
-    } else if (filterOptions[1].checked == true) {
+    if (filterOptions[0].checked == true) {} else if (filterOptions[1].checked == true) {
       quotesToCheck.forEach((item) => {
         if (item.includes("#neutral") == true) {
           document.getElementById("newButtons").style.display = "none";
@@ -74,19 +73,62 @@ function findFilter() {
             .getElementById("newFilterButtons")
             .appendChild(newQuoteButton);
 
-            document.getElementById("newFilterButtons").style.display = "inline-block";
-            var newFilterBtnChild = document.getElementById("newFilterButtons").children;
-            console.log(newFilterBtnChild);
-            for (var i4 = 0; i4 < newFilterBtnChild.length; i4++){
-              newFilterBtnChild[i4].style.display = "inline-block";
-              newFilterBtnChild[i4].setAttribute("id", i4);
-            }
+          document.getElementById("newFilterButtons").style.display = "inline-block";
+          var newFilterBtnChild = document.getElementById("newFilterButtons").children;
+          console.log(newFilterBtnChild);
+          for (var i4 = 0; i4 < newFilterBtnChild.length; i4++) {
+            newFilterBtnChild[i4].style.display = "inline-block";
+            newFilterBtnChild[i4].setAttribute("id", i4);
+          }
 
-            
-        } else {
-        }
+
+        } else {}
       });
-    } else if (filterOptions[2].checked == true) {
-    }
+    } else if (filterOptions[2].checked == true) {}
   });
 }
+
+function queryDetector() {
+  var urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams);
+
+  if (urlParams.has('Babysit')) {
+    document.getElementById("SubCategoryHeading").innerText = "Babysitting";
+  } else if (urlParams.has('Date')) {
+    document.getElementById("SubCategoryHeading").innerText = "Dating";
+  } else if (urlParams.has('Family')) {
+    document.getElementById("SubCategoryHeading").innerText = "Family";
+  } else if (urlParams.has('Hangout')) {
+    document.getElementById("SubCategoryHeading").innerText = "Hangout";
+  } else if (urlParams.has('SelfInvitation')) {
+    document.getElementById("SubCategoryHeading").innerText = "Self Invite";
+  } else if (urlParams.has('CoffeeChat')) {
+    document.getElementById("SubCategoryHeading").innerText = "Coffee Chat";
+  } else if (urlParams.has('JobOffer')) {
+    document.getElementById("SubCategoryHeading").innerText = "Job Offer";
+  } else if (urlParams.has('Shift')) {
+    document.getElementById("SubCategoryHeading").innerText = "Shift";
+  } else if (urlParams.has('Sick')) {
+    document.getElementById("SubCategoryHeading").innerText = "Sick";
+  } else if (urlParams.has('WorkEvent')) {
+    document.getElementById("SubCategoryHeading").innerText = "Work Event";
+  } else {
+    console.log("error has occured");
+  }
+
+
+}
+
+function categoryChange() {
+  console.log(localStorage.getItem('type'));
+  var typeOfEvent = localStorage.getItem('type');
+  if (localStorage.getItem("type") === "Personal") {
+    document.getElementById("CategoryHeading").innerText = "Personal";
+  } else if (localStorage.getItem("type") === "Business") {
+    document.getElementById("CategoryHeading").innerText = "Business";
+  } else {
+    console.log("error has occured");
+  }
+}
+categoryChange();
+queryDetector();
