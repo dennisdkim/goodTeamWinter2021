@@ -34,10 +34,6 @@
     z-index: 2;
 }
 
-* {
-    border: red 1px solid;
-}
-
 html,
 body {
     max-width: 100%;
