@@ -74,6 +74,10 @@
   opacity: 50%;
 
   font-family: 'EB Garamond', serif;
+<<<<<<< HEAD
+  
+=======
+>>>>>>> e05d5acf7178935549d8de986c278a24d540ccf1
 }
 
 #categories {
@@ -86,7 +90,13 @@
 #categories>a {
   text-decoration: none;
   display: flex;
+<<<<<<< HEAD
+  background-color: #cca0ff9d;
+  color: white;
+  font-weight: 500;
+=======
   background-color: #cca0ffad;
+>>>>>>> e05d5acf7178935549d8de986c278a24d540ccf1
   width: 42vw;
   height: 21vh;
   border-radius: 1.5rem;
