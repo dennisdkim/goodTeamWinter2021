@@ -101,3 +101,8 @@
   opacity: 50%;
   font-family: 'EB Garamond', serif;
 }
+
+#arrow {
+  font-size: 28px;
+  align-self:stretch;
+}

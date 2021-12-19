@@ -10,13 +10,13 @@ function queryDecector() {
 
         document.getElementById("thirdButton").innerText = "Shift";
         document.getElementById("thirdIcon").innerText = "schedule";
-        
+
         document.getElementById("fourthButton").innerText = "Sick";
         document.getElementById("fourthIcon").innerText = "sick";
 
         document.getElementById("fifthButton").innerText = "Work Event";
         document.getElementById("fifthIcon").innerText = "event";
-        
+
         document.getElementById("sixthButton").innerText = "Work Event";
         document.getElementById("sixthIcon").innerText = "event";
 
@@ -38,11 +38,11 @@ function queryDecector() {
         document.getElementById("thirdButton").innerText = "Family";
         document.getElementById("thirdIcon").innerText = "family_restroom";
 
-        document.getElementById("fourthButton").innerText = "Self Invite";
-        document.getElementById("fourthIcon").innerText = "mail";
+        document.getElementById("fourthButton").innerText = "Hangout";
+        document.getElementById("fourthIcon").innerText = "group_add";
 
-        document.getElementById("fifthButton").innerText = "Hangout";
-        document.getElementById("fifthIcon").innerText = "group_add";
+        document.getElementById("fifthButton").innerText = "Self Invite";
+        document.getElementById("fifthIcon").innerText = "mail";
 
         document.getElementById("sixthButton").innerText = "Work Event";
         document.getElementById("sixthIcon").innerText = "favorite";
