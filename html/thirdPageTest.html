@@ -56,7 +56,8 @@
           <input type="radio" id="neutral" name ="filterBtns" value="neutral" onclick="findFilter()"/>
           <label for="neutral">Neutral</label><br/>
           <input type="radio" id="nice" name ="filterBtns" value="nice" onclick="findFilter()"/>
-          <label for="nice">Nice</label>
+          <label for="nice">Nice</label><br/>
+          <button id="clearFilters" onclick="clearFilters()">Clear Filters</button>
         </div>
       </aside>
       <div class="generatedbuttons">
@@ -72,6 +73,8 @@
       window.onload = (event) => {
         console.log("you're in");
         loadButtons();
+        findFilter();
+        toggleFilter();
       };
     </script>
   </body>
