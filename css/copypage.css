@@ -73,6 +73,7 @@
 
     .copybutton{
         margin-top: .3rem;
+        padding-top: 25px;
     }
 
     .copybutton > button {
@@ -83,3 +84,26 @@
         height: 2rem;
         border-radius: 1rem;
     }
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 2.5rem;
+}
+
+.b1,
+.b2 {
+    background-color: #b779ff;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 2rem;
+    text-align: center;
+    margin: .8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-weight: lighter;
+    font-size: 1rem;
+}
