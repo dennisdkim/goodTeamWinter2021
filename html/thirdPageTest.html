@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choices</title>
+  <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/thirdPage.css" />
-  
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
 
   <!--font awesome icons-->
@@ -38,7 +39,11 @@
         <a class="logo" href="./firstPageTest.html">nomo</a>
       </div>
       <div class="login">
-        <a href=""> <span class="material-icons-round"> person </span></a>
+        <a href="#"> <span class="material-icons-round" id="new" onclick="showDropdown()"> person </span></a>
+      </div>
+      <div id="profileDropDown" style="display: none">
+        <a href="profile.html"><button id="dropDownViewProfile"> View Profile</button></a>
+        <a href="loginPage.html"><button id="dropDownLogout"> Logout </button></a>
       </div>
     </div>
     <div id="headingDiv">
