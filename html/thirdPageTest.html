@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/thirdPage.css" />
+    <title>Choices</title>
+    <link rel="stylesheet" href="../css/thirdPage.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     />
+
+    <!--font awesome icons-->
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
     <!-- Firebase 8 CDNs-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -29,37 +37,70 @@
 
   <body>
     <div class="container" id="bodyDiv">
+      <!-- NAVBAR -->
       <div class="navbar">
         <div class="one" onclick="history.back(-1)">
-          <span class="material-icons-round"> arrow_back_ios </span>
+          <span class="material-icons-round t1" id="new2">
+            arrow_back_ios
+          </span>
         </div>
         <div class="name">
           <a class="logo" href="./firstPageTest.html">nomo</a>
         </div>
         <div class="login">
-          <a href=""> <span class="material-icons-round"> person </span></a>
+          <a href="profile.html">
+            <span class="material-icons-round t1" id="new"> person </span>
+          </a>
         </div>
       </div>
+
+      <!-- HEADINGS -->
       <div id="headingDiv">
-        <br>
-        <span id="CategoryHeading">CATEGORY</span><span> INSERT greater than </span>
+        <br />
+        <span id="CategoryHeading">CATEGORY</span>
+        <span class="material-icons-round"> keyboard_double_arrow_right </span>
         <span id="SubCategoryHeading">SUBCATEGORY</span>
       </div>
-      <input type="checkbox" id="filterButton" onclick="toggleFilter()"><span class="material-icons-round">
+      <!-- FILTERS -->
+      <input type="checkbox" id="filterButton" onclick="toggleFilter()" /><span
+        class="material-icons-round"
+      >
         tune
-        </span>
+      </span>
       <aside id="filterContainer" style="display: none">
         <div>Filters</div>
         <div id="radioContainer">
-          <input type="radio" id="stern" name ="filterBtns" value="stern" onclick="findFilter()"/>
-          <label for="stern">Stern</label><br/>
-          <input type="radio" id="neutral" name ="filterBtns" value="neutral" onclick="findFilter()"/>
-          <label for="neutral">Neutral</label><br/>
-          <input type="radio" id="nice" name ="filterBtns" value="nice" onclick="findFilter()"/>
-          <label for="nice">Nice</label><br/>
-          <button id="clearFilters" onclick="clearFilters()">Clear Filters</button>
+          <input
+            type="radio"
+            id="stern"
+            name="filterBtns"
+            value="stern"
+            onclick="findFilter()"
+          />
+          <label for="stern">Stern</label><br />
+          <input
+            type="radio"
+            id="neutral"
+            name="filterBtns"
+            value="neutral"
+            onclick="findFilter()"
+          />
+          <label for="neutral">Neutral</label><br />
+          <input
+            type="radio"
+            id="nice"
+            name="filterBtns"
+            value="nice"
+            onclick="findFilter()"
+          />
+          <label for="nice">Nice</label><br />
+          <button id="clearFilters" onclick="clearFilters()">
+            Clear Filters
+          </button>
         </div>
       </aside>
+
+      <!-- BUTTONS -->
       <div class="generatedbuttons">
         <div id="quoteButton" style="display: none" onclick="storeQuote(this)">
           <a href="#"><button id="reply">Sample choice</button></a>
@@ -67,7 +108,25 @@
         <div id="newButtons"></div>
         <div id="newFilterButtons"></div>
       </div>
+
+      <div id="extraspace"></div>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <a
+          href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ"
+          target="blank"
+          ><i style="font-size: 0.8em" class="fa fa-users"></i
+        ></a>
+      </div>
+
+      <p class="copyright">nomo © 2021</p>
+    </footer>
+
     <script src="../js/thirdPage.js"></script>
     <script>
       window.onload = (event) => {
