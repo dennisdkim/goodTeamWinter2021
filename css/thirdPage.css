@@ -131,3 +131,36 @@ footer p{
 #extraspace{
   padding-top: 100px;
 }
+
+/*footer*/
+
+footer{
+
+  display: grid;
+  grid-row: 3;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer div{
+  justify-self: center;
+  font-size: 1.2em;
+}
+
+i{
+  padding-bottom: 5px;
+  justify-content: center;
+  color: lightgrey;
+}
+
+footer p{
+  justify-self: center;
+}
+
+#extraspace{
+  padding-top: 100px;
+}
