@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Replies</title>
   <link rel="stylesheet" href="/css/thirdPage.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
   <!-- Firebase 8 CDNs-->
@@ -21,6 +21,8 @@
 
   <!-- Link to the api keys for your firebase project -->
   <script src="../js/firebaseAPI.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -62,8 +64,23 @@
       <div id="newButtons"></div>
       <div id="newFilterButtons"></div>
     </div>
+
+    <div id="extraspace"></div>
   </div>
+
+  <footer>
+    <div>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+        <a href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ" target="blank"><i style="font-size: 0.8em"
+                class="fa fa-users"></i></a>
+    </div>
+
+    <p class="copyright"> nomo © 2021</p>
+  </footer>
+
   <script src="../js/thirdPage.js"></script>
+
   <script>
     window.onload = (event) => {
       console.log("you're in");

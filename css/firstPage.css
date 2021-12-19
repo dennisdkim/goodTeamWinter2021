@@ -102,6 +102,7 @@
     outline: #b779ff;
 } */
 
+
 .b1:hover, .b2:hover{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     background-color: #cca0ff;
@@ -121,24 +122,35 @@
 /*footer*/
 
 footer{
-    display: grid;
-    bottom: 0;
-    position:absolute;
-    justify-self: center;
-    padding-bottom: 15px;
-}
 
-i{
-    padding-bottom: 19px;
+    display: grid;
+    grid-row: 3;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  footer div{
+    justify-self: center;
+    font-size: 1.2em;
+  }
+  
+  i{
+    padding-bottom: 5px;
     justify-content: center;
     color: lightgrey;
-}
-footer div{
-    font-size: 1.4em;
+  }
+  
+  footer p{
     justify-self: center;
-}
-
-
+  }
+  
+  #extraspace{
+    padding-top: 100px;
+  }
 
 
 
