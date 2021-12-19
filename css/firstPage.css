@@ -127,27 +127,7 @@
 
 /*footer*/
 
-<<<<<<< HEAD
 footer {
-    display: grid;
-    bottom: 0;
-    position: absolute;
-    justify-self: center;
-    padding-bottom: 15px;
-}
-
-i {
-    padding-bottom: 19px;
-    justify-content: center;
-    color: lightgrey;
-}
-
-footer div {
-    font-size: 1.4em;
-    justify-self: center;
-}
-=======
-footer{
 
     display: grid;
     grid-row: 3;
@@ -157,29 +137,23 @@ footer{
     bottom: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-  
-  footer div{
+}
+
+footer div {
     justify-self: center;
     font-size: 1.2em;
-  }
-  
-  i{
+}
+
+i {
     padding-bottom: 5px;
     justify-content: center;
     color: lightgrey;
-  }
-  
-  footer p{
+}
+
+footer p {
     justify-self: center;
-  }
-  
-  #extraspace{
+}
+
+#extraspace {
     padding-top: 100px;
-  }
-
-
-
-
-
->>>>>>> d864b79af2091f4a5ceca5391e2fd42588b49b22
+}

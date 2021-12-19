@@ -77,7 +77,6 @@ function changeHREF(param) {
         document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?Hangout");
         document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?SelfInvitation");
     }
-<<<<<<< HEAD
 }
 
 var counter = 0;
@@ -94,6 +93,3 @@ function showDropdown() {
         document.getElementById("new").style.opacity = "0.75";
     }
 }
-=======
-}
->>>>>>> d864b79af2091f4a5ceca5391e2fd42588b49b22
