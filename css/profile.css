@@ -33,3 +33,8 @@
     background-color: #cca0ff;
     transform: scale(1.03, 1.03);
 }
+
+#formContainer {
+    margin-top: 2em;
+    margin-bottom: -10em;
+}
