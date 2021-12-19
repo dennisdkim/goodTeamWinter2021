@@ -31,4 +31,5 @@
     border-radius: 10px;
     margin-right: 3em;
     width: 6em;
+    z-index: 10;
 }
