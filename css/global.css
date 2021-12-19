@@ -1,6 +1,7 @@
 #dropDownViewProfile,
 #dropDownLogout {
     background-color: #551a8b;
+    opacity: 50%;
     border: none;
     padding: 4px;
     font-family: Verdana,
