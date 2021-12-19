@@ -42,9 +42,7 @@ function toggleFilter() {
   var checkBox = document.getElementById("filterButton");
   var filters = document.getElementById("filterContainer");
   if (checkBox.checked == true) {
-    filters.style.display = "inline";
-    // filters.style.color= "blue";
-    filters.style.right = "100px";
+    filters.style.display = "inline-block";
   } else {
     filters.style.display = "none";
   }

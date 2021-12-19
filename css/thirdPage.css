@@ -94,9 +94,31 @@
 
 #headingDiv{
   margin-left: 12%;
+  margin-right: 12%;
   font-size: 28px;
   opacity: 50%;
   font-family: 'EB Garamond', serif;
+}
+
+/*category arrow*/
+#categoryarrow{
+  font-size: 1rem;
+}
+
+/*hide the checkbox input*/
+#filterButton{
+  display: none;
+}
+
+/*moves the radio buttons to the right*/
+aside div{
+  padding-top: 8px;
+  margin-left: 70%;
+}
+
+/*filter button*/
+#preferences{
+  float: right;
 }
 
 /*footer*/

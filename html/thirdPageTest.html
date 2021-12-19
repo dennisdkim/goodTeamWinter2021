@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Choices</title>
-    <link rel="stylesheet" href="../css/thirdPage.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choices</title>
+  <link rel="stylesheet" href="../css/thirdPage.css" />
 
-    <!--font awesome icons-->
-    <link
-      rel="stylesheet"
-      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-    />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
 
-    <!-- Firebase 8 CDNs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+  <!--font awesome icons-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
-    <!-- Link to the api keys for your firebase project -->
-    <script src="../js/firebaseAPI.js"></script>
-  </head>
+  <!-- Firebase 8 CDNs-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
 
-  <body>
-    <div class="container" id="bodyDiv">
-      <!-- NAVBAR -->
-      <div class="navbar">
-        <div class="one" onclick="history.back(-1)">
-          <span class="material-icons-round t1" id="new2">
-            arrow_back_ios
-          </span>
-        </div>
-        <div class="name">
-          <a class="logo" href="./firstPageTest.html">nomo</a>
-        </div>
-        <div class="login">
-          <a href="profile.html">
-            <span class="material-icons-round t1" id="new"> person </span>
-          </a>
-        </div>
+  <!-- Link to the api keys for your firebase project -->
+  <script src="../js/firebaseAPI.js"></script>
+</head>
+
+<body>
+  <div class="container" id="bodyDiv">
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="one" onclick="history.back(-1)">
+        <span class="material-icons-round t1" id="new2">
+          arrow_back_ios
+        </span>
       </div>
 
-      <!-- HEADINGS -->
-      <div id="headingDiv">
-        <br />
-        <span id="CategoryHeading">CATEGORY</span>
-        <span class="material-icons-round"> keyboard_double_arrow_right </span>
-        <span id="SubCategoryHeading">SUBCATEGORY</span>
+      <div class="name">
+        <a class="logo" href="./firstPageTest.html">nomo</a>
       </div>
+
+      <div class="login">
+        <a href="profile.html">
+          <span class="material-icons-round t1" id="new"> person </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADINGS & FILTER -->
+    <div id="headingDiv">
+      <!--HEADINGS-->
+      <br />
+      <span id="CategoryHeading">CATEGORY</span>
+      <span class="material-icons-round" id="categoryarrow"> keyboard_double_arrow_right </span>
+      <span id="SubCategoryHeading">SUBCATEGORY</span>
+
+
       <!-- FILTERS -->
-      <input type="checkbox" id="filterButton" onclick="toggleFilter()" /><span
-        class="material-icons-round"
-      >
-        tune
-      </span>
+      <input type="checkbox" id="filterButton" onclick="toggleFilter()"/>
+
+      <button id="preferences" onclick="hello()">
+        <span class="material-icons-round">tune</span>
+      </button>
+      
+
+      <aside id="filterContainer" style="display: none">
+        <div>Filters</div>
+        <div id="radioContainer">
+          <input type="radio" id="stern" name="filterBtns" value="stern" onclick="findFilter()" />
+          <label for="stern">Stern</label><br />
+          <input type="radio" id="neutral" name="filterBtns" value="neutral" onclick="findFilter()" />
+          <label for="neutral">Neutral</label><br />
+          <input type="radio" id="nice" name="filterBtns" value="nice" onclick="findFilter()" />
+          <label for="nice">Nice</label><br />
+          <button id="clearFilters" onclick="clearFilters()">
+            Clear Filters
+          </button>
+        </div>
+      </aside>
+
+
+    </div>
+
+    <!-- FILTERS
+      <input type="checkbox" id="filterButton" onclick="toggleFilter()"/>
+      <span class="material-icons-round">tune</span>
+
       <aside id="filterContainer" style="display: none">
         <div>Filters</div>
         <div id="radioContainer">
@@ -98,43 +119,50 @@
             Clear Filters
           </button>
         </div>
-      </aside>
+      </aside> -->
 
-      <!-- BUTTONS -->
-      <div class="generatedbuttons">
-        <div id="quoteButton" style="display: none" onclick="storeQuote(this)">
-          <a href="#"><button id="reply">Sample choice</button></a>
-        </div>
-        <div id="newButtons"></div>
-        <div id="newFilterButtons"></div>
+    <!-- BUTTONS -->
+    <div class="generatedbuttons">
+      <div id="quoteButton" style="display: none" onclick="storeQuote(this)">
+        <a href="#"><button id="reply">Sample choice</button></a>
       </div>
-
-      <div id="extraspace"></div>
+      <div id="newButtons"></div>
+      <div id="newFilterButtons"></div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-facebook"></i>
-        <a
-          href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ"
-          target="blank"
-          ><i style="font-size: 0.8em" class="fa fa-users"></i
-        ></a>
-      </div>
+    <div id="extraspace"></div>
+  </div>
 
-      <p class="copyright">nomo © 2021</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-facebook"></i>
+      <a href="https://www.one-tab.com/page/gPCLa4TASCinNOgMbaDEaQ" target="blank"><i style="font-size: 0.8em"
+          class="fa fa-users"></i></a>
+    </div>
 
-    <script src="../js/thirdPage.js"></script>
-    <script>
-      window.onload = (event) => {
-        console.log("you're in");
-        loadButtons();
-        findFilter();
-        toggleFilter();
-      };
-    </script>
-  </body>
+    <p>nomo © 2021</p>
+  </footer>
+
+  <script src="../js/thirdPage.js"></script>
+  <script>
+    window.onload = (event) => {
+      console.log("you're in");
+      loadButtons();
+      findFilter();
+      toggleFilter();
+    };
+  </script>
+
+  <script>
+    function hello(){
+      document.getElementById('filterButton').click();
+    }
+
+  </script>
+
+
+</body>
+
 </html>
