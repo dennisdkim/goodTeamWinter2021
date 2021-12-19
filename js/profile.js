@@ -1,18 +1,5 @@
 
 
-
-// function changeEmail() {
-// const auth = getAuth();
-// updateEmail(auth.currentUser, "user@example.com").then(() => {
-//   // Email updated!
-//   // ...
-// }).catch((error) => {
-//   // An error occurred
-//   // ...
-// });
-// }
-// changeEmail();
-
 function updateNameAndEmail() {
             firebase.auth().onAuthStateChanged((user) => {
           if (user) {
@@ -21,8 +8,8 @@ function updateNameAndEmail() {
             currentUser.get().then((userDoc) => {
               var user_Name = userDoc.data().name;
               var email_Value = userDoc.data().email;
-                document.getElementById("name").value = user_Name;
-              document.getElementById("email").value = email_Value;
+                document.getElementById("name").innerText = user_Name;
+              document.getElementById("email").innerText = email_Value;
             });
           } else {
           }

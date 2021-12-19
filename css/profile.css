@@ -1,6 +1,7 @@
 #title {
     text-align: center;
     color: #551a8b;
+    font-size: 5vh;
 }
 
 .buttons {
@@ -36,5 +37,19 @@
 
 #formContainer {
     margin-top: 2em;
-    margin-bottom: -10em;
+    margin-bottom: -20rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+    color: #551a8b;
+}
+
+p {
+    font-size: 3vh;
+    margin-top: 10px;
+    text-align: center;
+    color: #551a8b;
 }
