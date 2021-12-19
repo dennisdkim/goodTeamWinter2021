@@ -117,3 +117,28 @@
     font-size: 1.8rem;
     opacity: 75%;
 }
+
+/*footer*/
+
+footer{
+    display: grid;
+    bottom: 0;
+    position:absolute;
+    justify-self: center;
+    padding-bottom: 15px;
+}
+
+i{
+    padding-bottom: 19px;
+    justify-content: center;
+    color: lightgrey;
+}
+footer div{
+    font-size: 1.4em;
+    justify-self: center;
+}
+
+
+
+
+
