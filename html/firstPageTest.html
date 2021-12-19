@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nomo</title>
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/firstPage.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -17,11 +19,18 @@
     <div class="mainbody">
         <div class="navbar">
             <div class="name"><a class="logo" href="">nomo</a> </div>
-            <div class="login"><a href="profile.html"> <span class="material-icons-round t1" id="new">
+            <div class="login">
+                <a href="#"> <span class="material-icons-round t1" id="new" onclick="showDropdown()">
                         person
                     </span></a>
             </div>
+            <div id="profileDropDown" style="display: none">
+                <a href="profile.html"><button id="dropDownViewProfile"> View Profile</button></a>
+                <a href="loginPage.html"><button id="dropDownLogout"> Logout </button></a>
+            </div>
         </div>
+
+
 
         <div class="content">
             <div class="text t2">
