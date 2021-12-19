@@ -52,7 +52,7 @@
       </div>
     </div>
 
-      <!-- <div class="login">
+    <!-- <div class="login">
         <a href="profile.html">
           <span class="material-icons-round t1" id="new"> person </span>
         </a>
@@ -68,27 +68,29 @@
 
 
       <!-- FILTERS -->
-      <input type="checkbox" id="filterButton" onclick="toggleFilter()"/>
+      <input type="checkbox" id="filterButton" onclick="toggleFilter()" />
 
       <button id="preferences" onclick="hello()">
         <span class="material-icons-round">tune</span>
       </button>
-      
 
-      <aside id="filterContainer" style="display: none">
-        <div>Filters</div>
-        <div id="radioContainer">
-          <input type="radio" id="stern" name="filterBtns" value="stern" onclick="findFilter()" />
-          <label for="stern">Stern</label><br />
-          <input type="radio" id="neutral" name="filterBtns" value="neutral" onclick="findFilter()" />
-          <label for="neutral">Neutral</label><br />
-          <input type="radio" id="nice" name="filterBtns" value="nice" onclick="findFilter()" />
-          <label for="nice">Nice</label><br />
-          <button id="clearFilters" onclick="clearFilters()">
-            Clear Filters
-          </button>
-        </div>
-      </aside>
+      <div id="profileDropDownz">
+        <aside id="filterContainer" style="display: none">
+          <div>Filters</div>
+          <div id="radioContainer">
+            <input type="radio" id="stern" name="filterBtns" value="stern" onclick="findFilter()" />
+            <label for="stern">Stern</label><br />
+            <input type="radio" id="neutral" name="filterBtns" value="neutral" onclick="findFilter()" />
+            <label for="neutral">Neutral</label><br />
+            <input type="radio" id="nice" name="filterBtns" value="nice" onclick="findFilter()" />
+            <label for="nice">Nice</label><br />
+            <button id="clearFilters" onclick="clearFilters()">
+              Clear Filters
+            </button>
+          </div>
+        </aside>
+      </div>
+
 
 
     </div>
@@ -165,7 +167,7 @@
   </script>
 
   <script>
-    function hello(){
+    function hello() {
       document.getElementById('filterButton').click();
     }
 
