@@ -10,15 +10,15 @@ function queryDecector() {
 
         document.getElementById("thirdButton").innerText = "Shift";
         document.getElementById("thirdIcon").innerText = "schedule";
-        
+
         document.getElementById("fourthButton").innerText = "Sick";
         document.getElementById("fourthIcon").innerText = "sick";
 
         document.getElementById("fifthButton").innerText = "Work Event";
         document.getElementById("fifthIcon").innerText = "event";
-        
-        document.getElementById("sixthButton").innerText = "Work Event";
-        document.getElementById("sixthIcon").innerText = "event";
+
+        document.getElementById("sixthButton").innerText = "Commute";
+        document.getElementById("sixthIcon").innerText = "drive_eta";
 
         document.getElementById("CategoryHeading").innerText = "Business";
         // console.log("business works");
@@ -38,14 +38,14 @@ function queryDecector() {
         document.getElementById("thirdButton").innerText = "Family";
         document.getElementById("thirdIcon").innerText = "family_restroom";
 
-        document.getElementById("fourthButton").innerText = "Self Invite";
-        document.getElementById("fourthIcon").innerText = "mail";
+        document.getElementById("fourthButton").innerText = "Hangout";
+        document.getElementById("fourthIcon").innerText = "group_add";
 
-        document.getElementById("fifthButton").innerText = "Hangout";
-        document.getElementById("fifthIcon").innerText = "group_add";
+        document.getElementById("fifthButton").innerText = "Self Invite";
+        document.getElementById("fifthIcon").innerText = "mail";
 
-        document.getElementById("sixthButton").innerText = "Work Event";
-        document.getElementById("sixthIcon").innerText = "favorite";
+        document.getElementById("sixthButton").innerText = "Commute";
+        document.getElementById("sixthIcon").innerText = "drive_eta";
 
         document.getElementById("CategoryHeading").innerText = "Personal";
         // console.log("personal works");
@@ -76,5 +76,20 @@ function changeHREF(param) {
         document.getElementById("third").setAttribute("href", "thirdPageTest.html?Family");
         document.getElementById("fourth").setAttribute("href", "thirdPageTest.html?Hangout");
         document.getElementById("fifth").setAttribute("href", "thirdPageTest.html?SelfInvitation");
+    }
+}
+
+var counter = 0;
+
+function showDropdown() {
+    if (counter % 2 == 0) {
+        document.getElementById("profileDropDown").style.display = "block";
+        document.getElementById("new").style.opacity = "1";
+        counter++;
+        
+    } else {
+        document.getElementById("profileDropDown").style.display = "none";
+        counter++;
+        document.getElementById("new").style.opacity = "0.75";
     }
 }

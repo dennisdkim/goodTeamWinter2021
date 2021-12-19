@@ -42,9 +42,7 @@ function toggleFilter() {
   var checkBox = document.getElementById("filterButton");
   var filters = document.getElementById("filterContainer");
   if (checkBox.checked == true) {
-    filters.style.display = "inline";
-    // filters.style.color= "blue";
-    filters.style.right = "100px";
+    filters.style.display = "inline-block";
   } else {
     filters.style.display = "none";
   }
@@ -199,18 +197,3 @@ function categoryChange() {
 }
 categoryChange();
 queryDetector();
-
-var counter = 0;
-
-function showDropdown() {
-    if (counter % 2 == 0) {
-        document.getElementById("profileDropDown").style.display = "block";
-        document.getElementById("new").style.opacity = "1";
-        counter++;
-        
-    } else {
-        document.getElementById("profileDropDown").style.display = "none";
-        counter++;
-        document.getElementById("new").style.opacity = "0.75";
-    }
-}

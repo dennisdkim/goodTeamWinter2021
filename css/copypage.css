@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-.mainbody{
+.mainbody {
     margin: 0;
     display: grid;
     height: 100vh;
@@ -11,45 +11,64 @@
     grid-template-rows: max-content max-content;
 }
 
-.navbar{
+.navbar {
     height: 15vh;
     display: grid;
     grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto 0em;
     align-items: center;
-    
+
 }
-    .one{
-        grid-column: 1;
-    }
 
-    .one > span {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        text-decoration: none;
-        color: #551a8b;
-    }
+#profileDropDown {
+    grid-column: 3/4;
+    grid-row: 2;
+}
 
-    .name{    
-        text-align: center;
-    }
+.one {
+    grid-column: 1;
+}
 
-    .logo{
-        text-decoration: none;
-        font-size: 5vh;
-    }
+.one:hover {
+    cursor: pointer;
+}
 
-    .login{
-        grid-column: 3/4;
-        grid-row: 1;
-    }
+.one>span {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+    color: #551a8b;
+}
 
-    .login > a {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        text-decoration: none;
-    }
+.name {
+    text-align: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.logo:link {
+    color: #551a8b;
+}
+
+.t1 {
+    color: #551a8b;
+}
+
+.login {
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.login>a {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+}
 
 .copybox {
     display: grid;
@@ -58,33 +77,52 @@
     grid-template-rows: max-content auto;
 }
 
-    #myInput{
-        margin-top: 1rem;
-        display: flex;
-        border: none;
-        height: 40vh;
-        width: 40vh;
-        align-self: baseline;
-        padding: 2rem;
-        padding-top: 3rem;
-        border-radius: 1rem;
-        background-color: rgba(137, 43, 226, 0.267);
-    }
+#myInput {
+    margin-top: 1rem;
+    display: flex;
+    border: none;
+    height: 40vh;
+    width: 40vh;
+    align-self: baseline;
+    padding: 2rem;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(137, 43, 226, 0.267);
+}
 
-    .copybutton{
-        margin-top: .3rem;
-        padding-top: 25px;
-    }
+.copybutton {
+    margin-top: .3rem;
+    padding: 35px 38px;
 
-    .copybutton > button {
-        background-color: rgba(69, 146, 108, 0.877);
-        color: white;
-        width: 49vh;
-        border: none;
-        height: 2rem;
-        border-radius: 1rem;
-    }
+}
 
+.copybutton a:hover {
+    cursor: pointer;
+}
+
+/* .copybutton>button {
+    background-color: rgba(69, 146, 108, 0.877);
+    color: white;
+    width: 49vh;
+    border: none;
+    height: 2rem;
+    border-radius: 1rem;
+
+    border: none;
+    padding: 20px 38px;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+} */
+
+/* * {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+} */
+
+/*from first page*/
 .buttons {
     display: grid;
     justify-content: center;
@@ -92,18 +130,59 @@
     padding-top: 2.5rem;
 }
 
-.b1,
-.b2 {
-    background-color: #b779ff;
+.b1 {
+    background-color: rgba(69, 146, 108, 0.877);
     border: none;
-    padding: 15px 32px;
+    padding: 10px 32px;
     border-radius: 2rem;
     text-align: center;
     margin: .8rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     text-decoration: none;
-    color: rgb(243, 243, 243);
+    color: rgba(243, 243, 243, 0.95);
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 1.0rem;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#new,
+#new2 {
+    font-size: 1.8rem;
+    opacity: 75%;
+}
+
+/*footer*/
+
+footer {
+
+    display: grid;
+    grid-row: 3;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer div {
+    justify-self: center;
+    font-size: 1.2em;
+}
+
+i {
+    padding-bottom: 5px;
+    justify-content: center;
+    color: lightgrey;
+}
+
+footer p {
+    justify-self: center;
+}
+
+#extraspace {
+    padding-top: 100px;
 }
