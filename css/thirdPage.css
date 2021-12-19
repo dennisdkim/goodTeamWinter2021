@@ -1,60 +1,103 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: max-content max-content;
-  }
-  
-  .navbar {
-    height: 15vh;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    align-items: center;
-  }
-  
-  .one {
-    grid-column: 1;
-    cursor: pointer;
-  }
-  
-  .one>span {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    text-decoration: none;
-    color: #551a8b;
-  }
-  
-  .name {
-    text-align: center;
-  }
-  
-  .logo {
-    text-decoration: none;
-    font-size: 5vh;
-  }
-  
-  .login {
-    grid-column: 3/4;
-    grid-row: 1;
-  }
-  
-  .login>a {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-decoration: none;
-  }
-
-.generatedbuttons{
-    margin-top: 10rem;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content max-content;
+}
+
+.navbar {
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+}
+
+.one {
+  grid-column: 1;
+  cursor: pointer;
+}
+
+.one>span {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-decoration: none;
+  color: #551a8b;
+}
+
+.logo:link {
+  color: #551a8b;
+}
+
+.t1 {
+  color: #551a8b;
+}
+
+.name {
+  text-align: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.login {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+
+.login>a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+}
+
+.generatedbuttons {
+  height: auto;
+  margin: 10%;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+#reply{
+  font-size: 1.1rem;
+  background-color: #cca0ffad;
+  border: none;
+  padding: 20px 38px;
+  border-radius: 2rem;
+  text-align: center;
+  margin: .8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+#reply:hover{
+  cursor: pointer;
+  color: rgba(0, 0, 0);
+  box-shadow: 2px 2px 10px 1.5px rgba(0, 0, 0, 0.2);
+  background-color: #cca0ffd7;
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+#new , #new2{
+  font-size: 1.8rem;
+  opacity: 75%;
+}
+
+#headingDiv{
+  margin-left: 12%;
+  font-size: 28px;
+  opacity: 50%;
+  font-family: 'EB Garamond', serif;
+}

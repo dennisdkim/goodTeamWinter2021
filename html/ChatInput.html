@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Edit</title>
     <link rel="stylesheet" href="../css/copypage.css" />
     <link
       rel="stylesheet"
@@ -31,13 +31,13 @@
     <div class="mainbody">
       <div class="navbar">
         <div class="one" onclick="history.back(-1)">
-          <span class="material-icons-round"> arrow_back_ios </span>
+          <span class="material-icons-round t1" id="new2"> arrow_back_ios </span>
         </div>
         <div class="name">
           <a class="logo" href="./firstPageTest.html">nomo</a>
         </div>
         <div class="login">
-          <a href=""> <span class="material-icons-round"> person </span></a>
+          <a href=""> <span class="material-icons-round t1" id="new"> person </span></a>
         </div>
       </div>
       <div class="copybox">
@@ -48,18 +48,25 @@
 
         <div class="copybutton">
           <!-- The button used to copy the text -->
-          <button onclick="myFunction()">copy to clipboard</button>
+          <a class="b1" onclick="myFunction()">Copy to Clipboard</a>
+          <!-- <button onclick="myFunction()">copy to clipboard</button> -->
         </div>
+
       </div>
+
     </div>
     <script src="/js/ChatInput.js"></script>
   </body>
-</html>
 
 <script>
   window.onload = (event) => {
     fillText();
+    biggerSize();
   };
+
+  function biggerSize(){
+    document.getElementById("myInput").style.fontSize= "x-large";
+  }
 
   //copy and paste function
   function myFunction() {
@@ -78,3 +85,4 @@
     //  + copyText.value
   }
 </script>
+</html>
