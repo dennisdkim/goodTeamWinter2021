@@ -86,7 +86,7 @@ function showDropdown() {
         document.getElementById("profileDropDown").style.display = "block";
         document.getElementById("new").style.opacity = "1";
         counter++;
-
+        
     } else {
         document.getElementById("profileDropDown").style.display = "none";
         counter++;

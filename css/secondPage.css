@@ -146,7 +146,7 @@ a:active {
 
 /*footer*/
 
-footer{
+footer {
 
   display: grid;
   grid-row: 3;
@@ -158,21 +158,21 @@ footer{
   padding-bottom: 5px;
 }
 
-footer div{
+footer div {
   justify-self: center;
   font-size: 1.2em;
 }
 
-i{
+i {
   padding-bottom: 5px;
   justify-content: center;
   color: lightgrey;
 }
 
-footer p{
+footer p {
   justify-self: center;
 }
 
-#extraspace{
+#extraspace {
   padding-top: 100px;
 }
