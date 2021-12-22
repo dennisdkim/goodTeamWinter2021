@@ -45,6 +45,10 @@ h2 {
     font-size: 3rem;
   }
   
+  #new {
+    font-size: 1.8rem;
+    opacity: 75%;
+  }
   .login {
     grid-column: 3/4;
     grid-row: 1;
@@ -76,7 +80,7 @@ footer div {
   font-size: 1.2em;
 }
 
-i {
+.bottomicons {
   padding-bottom: 5px;
   justify-content: center;
   color: lightgrey;

@@ -53,3 +53,38 @@ p {
     text-align: center;
     color: #551a8b;
 }
+
+/*footer*/
+
+footer {
+
+    display: grid;
+    grid-row: 3;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer div {
+    justify-self: center;
+    font-size: 1.2em;
+}
+
+.bottomicons {
+    padding-bottom: 0px;
+    justify-content: center;
+    color: lightgrey;
+}
+
+footer p {
+    justify-self: center;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+#extraspace {
+    padding-top: 100px;
+}

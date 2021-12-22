@@ -173,8 +173,8 @@ footer div {
     font-size: 1.2em;
 }
 
-i {
-    padding-bottom: 5px;
+.bottomicons {
+    padding-bottom: 0px;
     justify-content: center;
     color: lightgrey;
 }
