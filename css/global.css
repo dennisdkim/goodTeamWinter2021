@@ -1,6 +1,7 @@
 #dropDownViewProfile,
 #dropDownLogout {
     background-color: #551a8b;
+    opacity: 50%;
     border: none;
     padding: 4px;
     font-family: Verdana,
@@ -32,4 +33,18 @@
     margin-right: 3em;
     width: 6em;
     z-index: 2;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    #profileDropDown {
+        margin-left: -4em;
+        margin-top: 2em;
+    }
+
 }

@@ -56,3 +56,37 @@ h2 {
     align-items: center;
     text-decoration: none;
   }
+
+  /*footer*/
+
+footer {
+
+  display: grid;
+  grid-row: 3;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer div {
+  justify-self: center;
+  font-size: 1.2em;
+}
+
+i {
+  padding-bottom: 5px;
+  justify-content: center;
+  color: lightgrey;
+}
+
+footer p {
+  justify-self: center;
+  font-size: 12px;
+}
+
+#extraspace {
+  padding-top: 10px;
+}
