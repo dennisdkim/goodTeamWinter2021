@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choices</title>
-  <link rel="stylesheet" href="../css/thirdPage.css" />
-  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="/css/thirdPage.css" />
+  <link rel="stylesheet" href="/css/global.css" />
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
 
@@ -26,7 +26,7 @@
   <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
 
   <!-- Link to the api keys for your firebase project -->
-  <script src="../js/firebaseAPI.js"></script>
+  <script src="/js/firebaseAPI.js"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         </span>
       </div>
       <div class="name">
-        <a class="logo" href="./index.html">nomo</a>
+        <a class="logo" href="index.html">nomo</a>
       </div>
       <div class="login">
         <a href="#">
@@ -51,12 +51,6 @@
         <a href="loginPage.html"><button id="dropDownLogout"> Logout </button></a>
       </div>
     </div>
-
-    <!-- <div class="login">
-        <a href="profile.html">
-          <span class="material-icons-round t1" id="new"> person </span>
-        </a>
-      </div> -->
 
     <!-- HEADINGS & FILTER -->
     <div id="headingDiv">
@@ -76,12 +70,8 @@
 
       <div id="profileDropDownz">
         <aside id="filterContainer" style="display: none">
-<<<<<<< HEAD
-          <div>Filters</div>
-=======
           <div id="filterstitle">Filters</div>
           <span id="line"></span>
->>>>>>> d9159e3e1b812ff266b37d7ac01a583aa480abae
           <div id="radioContainer">
             <input type="radio" id="stern" name="filterBtns" value="stern" onclick="findFilter()" />
             <label for="stern">Stern</label><br />
@@ -95,47 +85,7 @@
           </div>
         </aside>
       </div>
-
-
-
     </div>
-
-    <!-- FILTERS
-      <input type="checkbox" id="filterButton" onclick="toggleFilter()"/>
-      <span class="material-icons-round">tune</span>
-
-      <aside id="filterContainer" style="display: none">
-        <div>Filters</div>
-        <div id="radioContainer">
-          <input
-            type="radio"
-            id="stern"
-            name="filterBtns"
-            value="stern"
-            onclick="findFilter()"
-          />
-          <label for="stern">Stern</label><br />
-          <input
-            type="radio"
-            id="neutral"
-            name="filterBtns"
-            value="neutral"
-            onclick="findFilter()"
-          />
-          <label for="neutral">Neutral</label><br />
-          <input
-            type="radio"
-            id="nice"
-            name="filterBtns"
-            value="nice"
-            onclick="findFilter()"
-          />
-          <label for="nice">Nice</label><br />
-          <button id="clearFilters" onclick="clearFilters()">
-            Clear Filters
-          </button>
-        </div>
-      </aside> -->
 
     <!-- BUTTONS -->
     <div class="generatedbuttons">
@@ -161,7 +111,7 @@
     <p>nomo © 2021</p>
   </footer>
 
-  <script src="../js/thirdPage.js"></script>
+  <script src="/js/thirdPage.js"></script>
   <script>
     window.onload = (event) => {
       console.log("you're in");
