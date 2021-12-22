@@ -26,7 +26,7 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
 
     <!-- Link to the api keys for your firebase project -->
-    <script src="../js/firebaseAPI.js"></script>
+    <script src="/js/firebaseAPI.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
 </head>
@@ -36,7 +36,7 @@
     <!--navbar-->
     <div class="navbar">
         <div class="one" onclick="history.back(-1)"></div>
-        <div class="name"><a class="logo" href="./indexTest.html">nomo</a> </div>
+        <div class="name"><a class="logo" href="index.html">nomo</a> </div>
         <div class="login"><a href=""> <span class="material-icons-round">
                     person
                 </span></a>
@@ -110,7 +110,7 @@
             },
             // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
             signInFlow: 'popup',
-            signInSuccessUrl: 'indexTest.html',
+            signInSuccessUrl: 'index.html',
             signInOptions: [
                 firebase.auth.EmailAuthProvider.PROVIDER_ID,
 
