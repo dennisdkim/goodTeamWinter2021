@@ -107,6 +107,20 @@
   font-family: 'EB Garamond', serif;
 }
 
+#filterContainer{
+  font-size: 19px;
+  color: #551a8b;
+  
+}
+
+#clearFilters{
+  color:white;
+  background-color: #551a8b;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
 /*category arrow*/
 #categoryarrow{
   font-size: 1rem;
@@ -119,8 +133,9 @@
 
 /*moves the radio buttons to the right*/
 aside div{
-  padding-top: 8px;
-  margin-left: 70%;
+  padding: 8px;
+  margin-left: 10%;
+
 }
 
 /*filter button*/
@@ -128,10 +143,19 @@ aside div{
   float: right;
 }
 
+#profileDropDownz {
+  background-color: whitesmoke;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  /* margin-left: 80%; */
+  width: 6em;
+  z-index: 2;
+
+}
+
 /*footer*/
 
 footer {
-
   display: grid;
   grid-row: 3;
   width: 100vw;
